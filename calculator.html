@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soumya's C++ Calculator (Code Display)</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px;
+    }
+    pre {
+      background-color: #111;
+      border: 2px solid #00ff00;
+      padding: 20px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    h1 {
+      text-align: center;
+      color: #00ff00;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Terminal Calculator Code</h1>
+  <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    char op;
+    double num1, num2;
+    double result;
+    cout &lt;&lt; "| ============ | Calculator | ============ |\n";
+    cout &lt;&lt; ">> Enter Operator (+, -, *, /): ";
+    cin &gt;&gt; op;
+    cout &lt;&lt; ">> Enter First Number: ";
+    cin &gt;&gt; num1;
+    cout &lt;&lt; ">> Enter Second Number: ";
+    cin &gt;&gt; num2;
+    switch(op){
+        case '+':
+        result = num1 + num2;
+        cout &lt;&lt; ">> Result: " &lt;&lt; result &lt;&lt; "\n";
+        break;
+        case '-':
+        result = num1 - num2;
+        cout &lt;&lt; ">> Result: "&lt;&lt;result &lt;&lt; "\n";
+        break;
+        case '*':
+        result = num1 * num2;
+        cout &lt;&lt; ">> Result: "&lt;&lt;result &lt;&lt; "\n";
+        break;
+        case '/':
+        result = num1 / num2;
+        cout &lt;&lt; ">> Result: "&lt;&lt;result &lt;&lt; "\n";
+        break;
+    }
+    cout &lt;&lt; "| ======================================== |\n";
+    return 0;
+}
+  </pre>
+</body>
+</html>
